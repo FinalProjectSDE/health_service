@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="health-management_service">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../Software/eclipse/"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <path id="Web App Libraries.libraryclasspath"/>
+    <path id="EAR Libraries.libraryclasspath"/>
+    <path id="Ivy.libraryclasspath">
+        <pathelement location="../../../.ivy2/cache/com.sun.xml.ws/jaxws-rt/jars/jaxws-rt-2.2.8.jar"/>
+        <pathelement location="../../../.ivy2/cache/javax.xml.ws/jaxws-api/jars/jaxws-api-2.2.9.jar"/>
+        <pathelement location="../../../.ivy2/cache/javax.xml.soap/javax.xml.soap-api/jars/javax.xml.soap-api-1.3.5.jar"/>
+        <pathelement location="../../../.ivy2/cache/javax.annotation/javax.annotation-api/jars/javax.annotation-api-1.2-b03.jar"/>
+        <pathelement location="../../../.ivy2/cache/javax.jws/jsr181-api/jars/jsr181-api-1.0-MR1.jar"/>
+        <pathelement location="../../../.ivy2/cache/com.sun.xml.bind/jaxb-core/jars/jaxb-core-2.2.7.jar"/>
+        <pathelement location="../../../.ivy2/cache/com.sun.istack/istack-commons-runtime/jars/istack-commons-runtime-2.15.jar"/>
+        <pathelement location="../../../.ivy2/cache/com.sun.xml.bind/jaxb-impl/jars/jaxb-impl-2.2.7.jar"/>
+        <pathelement location="../../../.ivy2/cache/com.sun.xml.fastinfoset/FastInfoset/jars/FastInfoset-1.2.12.jar"/>
+        <pathelement location="../../../.ivy2/cache/javax.xml.bind/jsr173_api/jars/jsr173_api-1.0.jar"/>
+        <pathelement location="../../../.ivy2/cache/com.sun.xml.ws/policy/jars/policy-2.3.1.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.glassfish.gmbal/gmbal-api-only/jars/gmbal-api-only-3.1.0-b001.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.glassfish.external/management-api/jars/management-api-3.1.0-b001.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.jvnet.staxex/stax-ex/jars/stax-ex-1.7.1.jar"/>
+        <pathelement location="../../../.ivy2/cache/com.sun.xml.stream.buffer/streambuffer/jars/streambuffer-1.5.1.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.jvnet.mimepull/mimepull/jars/mimepull-1.9.1.jar"/>
+        <pathelement location="../../../.ivy2/cache/com.sun.xml.messaging.saaj/saaj-impl/jars/saaj-impl-1.3.20.jar"/>
+        <pathelement location="../../../.ivy2/cache/javax.xml.soap/saaj-api/jars/saaj-api-1.3.4.jar"/>
+        <pathelement location="../../../.ivy2/cache/javax.activation/activation/jars/activation-1.1.jar"/>
+        <pathelement location="../../../.ivy2/cache/com.sun.org.apache.xml.internal/resolver/jars/resolver-20050927.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.codehaus.woodstox/woodstox-core-asl/jars/woodstox-core-asl-4.1.2.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.codehaus.woodstox/stax2-api/jars/stax2-api-3.1.1.jar"/>
+        <pathelement location="../../../.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.0.1.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.xerial/sqlite-jdbc/jars/sqlite-jdbc-3.7.2.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.xerial.thirdparty/nestedvm/jars/nestedvm-1.0.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.xerial.thirdparty/jdbc-api/jars/jdbc-api-1.4.jar"/>
+        <pathelement location="../../../.ivy2/cache/javax.ejb/javax.ejb-api/jars/javax.ejb-api-3.2.jar"/>
+        <pathelement location="../../../.ivy2/cache/javax.transaction/javax.transaction-api/jars/javax.transaction-api-1.2.jar"/>
+        <pathelement location="../../../.ivy2/cache/javax.xml.rpc/javax.xml.rpc-api/jars/javax.xml.rpc-api-1.1.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.eclipse.persistence/javax.persistence/jars/javax.persistence-2.1.0.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.eclipse.persistence/org.eclipse.persistence.jpa/jars/org.eclipse.persistence.jpa-2.5.2.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.eclipse.persistence/org.eclipse.persistence.asm/jars/org.eclipse.persistence.asm-2.5.2.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.eclipse.persistence/org.eclipse.persistence.antlr/jars/org.eclipse.persistence.antlr-2.5.2.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.eclipse.persistence/org.eclipse.persistence.jpa.jpql/jars/org.eclipse.persistence.jpa.jpql-2.5.2.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.eclipse.persistence/org.eclipse.persistence.core/jars/org.eclipse.persistence.core-2.5.2.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.eclipse.persistence/org.eclipse.persistence.nosql/jars/org.eclipse.persistence.nosql-2.5.2.jar"/>
+        <pathelement location="../../../.ivy2/cache/javax.resource/connector-api/jars/connector-api-1.5.jar"/>
+        <pathelement location="../../../.ivy2/cache/net.sf.dozer/dozer/jars/dozer-5.5.1.jar"/>
+        <pathelement location="../../../.ivy2/cache/commons-beanutils/commons-beanutils/jars/commons-beanutils-1.9.1.jar"/>
+        <pathelement location="../../../.ivy2/cache/commons-collections/commons-collections/jars/commons-collections-3.2.1.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.2.1.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.5.jar"/>
+        <pathelement location="../../../.ivy2/cache/junit/junit/jars/junit-4.11.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.hamcrest/hamcrest-core/jars/hamcrest-core-1.3.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.javassist/javassist/bundles/javassist-3.18.1-GA.jar"/>
+        <pathelement location="../../../.ivy2/cache/javax.el/el-api/jars/el-api-2.2.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.glassfish.web/el-impl/jars/el-impl-2.2.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.osgi/org.osgi.core/jars/org.osgi.core-4.3.0.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.hibernate/hibernate-core/jars/hibernate-core-3.6.9.Final.jar"/>
+        <pathelement location="../../../.ivy2/cache/antlr/antlr/jars/antlr-2.7.6.jar"/>
+        <pathelement location="../../../.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.hibernate/hibernate-commons-annotations/jars/hibernate-commons-annotations-3.2.0.Final.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+        <pathelement location="../../../.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar"/>
+        <pathelement location="../../../.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.0.0.GA.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.jboss.javaee/jboss-jacc-api_JDK4/jars/jboss-jacc-api_JDK4-1.1.0.jar"/>
+        <pathelement location="../../../.ivy2/cache/ant/ant/jars/ant-1.6.5.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.apache.xmlbeans/xmlbeans/jars/xmlbeans-2.5.0.jar"/>
+        <pathelement location="../../../.ivy2/cache/stax/stax-api/jars/stax-api-1.0.1.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.apache.xmlbeans/xmlbeans-xpath/jars/xmlbeans-xpath-2.5.0.jar"/>
+        <pathelement location="../../../.ivy2/cache/javax.xml.bind/jaxb-api/jars/jaxb-api-2.2.11.jar"/>
+        <pathelement location="../../../.ivy2/cache/joda-time/joda-time/jars/joda-time-2.4.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.2.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.slf4j/slf4j-nop/jars/slf4j-nop-1.7.7.jar"/>
+        <pathelement location="../../../.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.7.jar"/>
+    </path>
+    <path id="health-management_service.classpath">
+        <pathelement location="build/classes"/>
+        <path refid="Web App Libraries.libraryclasspath"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
+        <path refid="Ivy.libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="build/classes"/>
+        <copy includeemptydirs="false" todir="build/classes">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="build/classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="build/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="health-management_service.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="start">
+        <java classname="introsde.healthmanagement.endpoint.PeoplePublisher" failonerror="true" fork="yes">
+            <classpath refid="health-management_service.classpath"/>
+        </java>
+    </target>
+</project>
